@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <link rel="stylesheet" href="../css/contact.css">  
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="/Photos_restaurant/favicon.ico.png">
+</head>
+
+<body>
+    <nav>
+    <header class="page-header">
+        <a href="index.html"><img class="header-logo" src="../Photos_restaurant/Logo_white.png" alt="logo"></a>
+        <input type="checkbox" name="hamburger-menu" id="menu_toggle">
+        <label for="menu_toggle" class="hamburger-button">
+        <span class="hamburger-lines"></span>
+        </label>
+        <ul class="header-menu menu-box">
+              <li class="header-menu-item dropdown"><a href="menu.html" class="dropbtn">Menu</a>
+                <div class=" dropdown-content">
+                    <a href="menu.html#antipasti">Antipasti</a>
+                    <a href="menu.html#soups">Soups</a>
+                    <a href="menu.html#salads">Salads</a>
+                    <a href="menu.html#pasta">Pasta</a>
+                    <a href="menu.html#secondi-and-grill">Secondi and Grill</a>
+                    <a href="menu.html#pizza">Pizza</a>
+                    <a href="menu.html#sides">Sides</a>
+                    <a href="menu.html#desserts">Desserts</a>
+                </div>
+            </li>           
+            <li class="header-menu-item"><a href="winelist.html">Winelist</a></li>
+            <li class="header-menu-item"><a href="gallery.html">Gallery</a></li>
+            <li class="header-menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    </nav>
+
+    <main>
+        <section class="contact-paragraph">
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-wording">
+            Our restaurant is located at the heart of Budapest, just 5 minutes walk from the Parliament with a beautiful 
+            view to Buda Castle and Chain Bridge.
+            If you would like to reserve a table, please get in touch with us by sending this form below or 
+            call us at the following number.
+            </p>
+            <h4 class="titles">Opening hours:</h4>
+            <ul class="opening-hours">
+                <li>Sunday - Wednesday: 12:00 - 23:00</li>
+                <li>Thursday - Friday: 12:00 - 0:00</li>
+                <li>Saturday: 12:00 - 01:00 </li>
+            </ul>
+            <p>Table reservation:</p>
+            <p>+36 1 123 4567</p>
+        </section>
+
+        <section class="reservation-container">
+            <h3 class="titles">Book a table</h3>
+            <form class="reservation-form" action="https://formspree.io/forms/mnqwlrqw" method="post">
+            <label class="form-label">Name:</label>
+                <input class="form-item" type="text" name="Name" placeholder="First" required>
+                <input class="form-item" type="text" name="Name" placeholder="Last" required>
+            <label class="form-label">Phone number:</label>
+                <input class="form-item" 
+                type="tel" 
+                name="phone-number" 
+                placeholder="+36-70-111-2222"
+                pattern="(\+[1-9][0-9]?|06?)-[0-9][0-9]?[0-9]?-[0-9]+"
+                required>
+            <label class="form-label">When would you like to join us?</label>
+                <input class="form-item" type="date" name="date">
+                <input class="form-item" type="time" name="time">
+            <label class="form-label">Where would you like to seat?</label>
+              <div class="option-container">    
+                <input class="radio-btn" type="radio" id="inside" name="place-request" value="0">
+                <label for="inside">Inside</label>
+                <input class="radio-btn" type="radio" id="outside_patio" name="place-request" value="1">
+               <label for="outside_patio">Outside patio</label>
+            </div>
+            <label class="form-label">Additional request:</label>
+                <textarea class="form-item" name="Additional-request"></textarea>
+                <input class="reserve-btn" type="submit" value="Reserve">
+          </form>
+          </section>
+
+          <div>
+            <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.360796333163!2d19.043642851195397!3d47.502364379075686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc167e9c0581%3A0x1dae35edcd5c279b!2sBudapest%2C%20Sz%C3%A9chenyi%20rkp.%204%2C%201054!5e0!3m2!1shu!2shu!4v1660986095966!5m2!1shu!2shu"></iframe>
+        </div>
+        
+        <section class="contact-container">
+            <div class="contact-box">
+                <h2 class="contact-section-main-title">Contact</h2>
+                <h4 class="contact-section-titles">Reservation:</h4>
+                <p class="contact-text">+3613026473</p>
+                <p class="contact-text">reservation@pomodorobudapest.com</p>
+                <h4 class="contact-section-titles">Opening hours:</h4>
+                    <ul class="contact-text">
+                        <li>Sunday - Wednesday: 12:00 - 23:00</li>
+                        <li>Thursday - Friday: 12:00 - 0:00</li>
+                        <li>Saturday: 12:00 - 01:00 </li>
+                    </ul>
+            </div>
+            <div class="subscribe-box"> 
+                <h2>Sign up for our newsletter!</h2>
+              <form class="subscribe-container" action="https://formspree.io/forms/mnqwlrqw" method="post">
+                <label>
+                    <input class="subscribe-item" type="text" name="Name"  placeholder="Name" required>
+                </label>
+                <label>
+                    <input class="subscribe-item" type="text" name="Email"  placeholder="Email" required>
+                </label>
+                <label>
+                    <input class="subscribe-btn" type="submit" value="Subscribe">
+                </label>
+              </form>
+            </div>          
+          </section>
+    </main>   
+
+    <footer>
+        <nav class="footer">
+        <ul class="social-logo">
+            <li><a href="#"><span class="facebook-logo icons"></span></a></li>
+            <li><a href="#"><span class="instagram-logo icons"></span></a></li>
+        </ul>
+            <p class="copyright">Copyright &copy; ChezPierre 2022</p>
+        </nav>
+    </footer> 
+</body>
+</html>
+  

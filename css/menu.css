@@ -1,0 +1,152 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #66666612;;
+}
+
+/* MENU STRUCTURE */
+.grid-container {
+    display: grid;
+    justify-content: center;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-rows:auto ;
+    grid-gap: 0.6rem;
+    align-items: center;
+    justify-self: start;
+    height:fit-content;
+    background-color: rgba(245, 245, 245, 0.915);
+    margin:2rem 1.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    width:85vw;
+    color:#353d01;
+    font-weight: 600;
+    font-style: oblique;    
+}
+
+.price {
+    justify-self: end;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+
+/* Pictures */
+.menu-titles {
+    color: white;
+    text-align:center;
+    font-size: 2rem;
+    padding: 9rem 1rem 0rem 1rem;
+}
+
+#antipasti {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../Menu_pictures/tapas.jpg");
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 50vh;
+    margin:3rem 0  3.5rem 0;
+}
+
+#soups {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Menu_pictures/soup.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3.5rem 0;   
+}
+
+#salads {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Menu_pictures/greek-salad.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3.5rem 0;
+}
+
+#pasta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../Menu_pictures/pasta.jpg") ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3.5rem 0;
+}
+
+#secondi-and-grill {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../Menu_pictures/grilled_meat2.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3.5rem 0;
+}
+
+#pizza {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../Menu_pictures/pizza.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3.5rem 0;
+}
+
+#sides {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../Menu_pictures/grilled_vegetables.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3.5rem 0;
+}
+
+#desserts {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../Menu_pictures/cheescake-slice-plate.jpg");
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    height: 50vh;
+    margin: 3.5rem 0;
+}
+
+#googleMap {
+    margin-top:2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+       /* MENU STRUCTURE */
+.grid-item {
+    grid-template-columns: 85% 15%;
+    margin:2rem 1rem 2rem 1rem;
+    width: 70vw;
+    height: 6rem;
+}
+.menu-titles {
+    font-size: 3rem;
+}
+}
+
+@media screen and (min-width: 992px) {
+       /* MENU STRUCTURE */
+.grid-item {
+    width: 65vw;
+}
+}
+
+@media screen and (min-width: 1680px) {
+    /* MENU STRUCTURE */
+.menu-titles {
+    font-size: 4rem;
+}
+}

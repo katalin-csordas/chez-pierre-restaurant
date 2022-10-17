@@ -1,0 +1,65 @@
+/* BODY WINE HEADER PICTURE */
+.our-wines {
+    background-image: url("../Menu_pictures/wine-bottles.jpg");
+    height: 25rem;
+    background-size:cover;
+    background-position:center center;
+    margin-top: 3rem;
+}
+
+.our-wines-title {
+    font-size: 3rem;
+    color:white;
+    text-align: center;
+    padding-top: 12rem;
+}
+
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 1.5rem;
+}
+
+.intr-paragraph {
+    padding: 1rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.wine_list {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: brown;
+}
+
+.wine_list:hover {
+    color: rgb(1, 36, 1);
+    text-shadow: 2px 2px 5px brown;
+}
+
+.signatory {
+    font-style: italic;
+}
+
+#googleMap{
+    margin-top:0rem;
+}  
+
+@media screen and (min-width: 768px) {
+.introduction {
+    margin: 4rem 6rem;
+}
+}
+
+@media screen and (min-width: 992px) {
+.introduction {
+    margin: 4rem 8rem;
+}
+}
+@media screen and (min-width: 1600px) {
+.introduction {
+    margin: 4rem 16rem;
+}
+}
