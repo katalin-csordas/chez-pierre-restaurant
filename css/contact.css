@@ -1,7 +1,6 @@
 /* CONTACT SECTION */
 
 .contact-paragraph {
-/*width: 100%;*/
 text-align: center;
 padding: 2rem;
 line-height: 2rem;
@@ -53,6 +52,9 @@ line-height: 2rem;
     padding: 0.7rem;
     width:15rem;
 }
+.form-item::placeholder {
+    color: black;
+}
 
 .form-label {
     margin-top: 1rem;
@@ -73,6 +75,9 @@ line-height: 2rem;
     width: 7rem;
     align-self:center;
     cursor: pointer;
+}
+.subscribe-item {
+    color:white;
 }
  
 @media screen and (min-width: 768px){

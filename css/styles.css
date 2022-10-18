@@ -1,8 +1,3 @@
-/* TERVEZÉSI SEGÍTSÉG, KÉSŐBB TÖRÖLJÜK */
-    section, div, header, footer{
-        /*outline: 1px solid black;*/
-    }
-
     /* GENERAL STYLES */
 html {
     min-width: 320px;
@@ -36,14 +31,11 @@ ul {
 /* HEADER STYLES */
 .page-header {
     background: linear-gradient(90deg, rgb(118, 130, 150) 0%, rgb(80, 62, 28)100%);
- /* background: linear-gradient(90deg, rgb(136, 153, 182) 0%, rgb(80, 62, 28)100%);*/
-   /*background: linear-gradient(90deg, rgb(120, 120, 128) 0%, rgb(133, 98, 32)100%);*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin:0.5rem;   
     color:whitesmoke;
-   /* background-color: #1e2301ce; /*zöld háttérszín*/
 }
 
 .header-logo {
@@ -59,7 +51,6 @@ ul {
 }   
     /* CONTACT STYLES */
 .contact-section-titles {
-    /*color: rgb(190, 163, 89);*/
     padding: 1.8rem 0 1rem 0;
 }
     
@@ -69,8 +60,6 @@ ul {
 }
     
 .contact-container { 
-    /*background: linear-gradient(90deg, rgb(53, 61, 0) 0%, rgb(67, 102, 17)100%);  eredeti zöld szín*/
-    /*background: linear-gradient(90deg, rgb(120, 120, 128) 0%, rgb(133, 98, 32)100%);*/
     background: linear-gradient(90deg, rgb(118, 130, 150) 0%, rgb(80, 62, 28)100%);
     color: white;
     padding: 10%;
@@ -88,8 +77,8 @@ ul {
 }
     
 .subscribe-item {
-    border-color: white;
-    color: white;
+    border-color: rgba(255, 255, 255, 0.737);
+    border-style: solid;
     background-color:transparent;
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
@@ -107,7 +96,15 @@ ul {
     align-self: center;
     cursor: pointer;
 }
-    
+
+.placeholder-email, .placeholder-name {
+    color:white;
+}
+
+.subscribe-item::placeholder {
+    color:white;
+    opacity: 0.8;
+} 
  .subscribe-btn:hover {
     color: rgb(77, 58, 4);
     background-color: whitesmoke;
@@ -124,7 +121,7 @@ ul {
     align-items: center;
     margin: 2rem;
     font-size: 0.9rem;
-        color:rgb(30, 35, 1);
+    color:rgb(30, 35, 1);
 }
 .icons {
     display: inline-block;
@@ -144,7 +141,9 @@ ul {
     display: flex;
     flex-direction: row;
 }
-
+.facebook-logo:hover, .instagram-logo:hover{
+    box-shadow: 2px 2px 1px rgb(27, 19, 4);
+}
 /* HAMBURGER MENU */
 @media (max-width: 767px) {
 a {
@@ -233,13 +232,6 @@ a {
 @media screen and (min-width: 768px) {
 
 /* HEADER */
- /*header sticky - később törölhető {
-    overflow:hidden;
-    position: fixed;
-    top:-10px;
-    width:100%;
-    background-color: #e7e3e3;
-}*/
 #menu_toggle {
         display: none;
 }
@@ -260,7 +252,6 @@ a {
 
 a {
     text-decoration: none;
-    /*color:#353d01;*/
     color: white;
 }
 
@@ -321,8 +312,6 @@ li.dropdown {display: inline-block;}
     flex-direction: row;
     flex-wrap: nowrap;   
     padding: 5% 15%;
-    /*padding:3rem 8rem 3rem 8rem;*/
-    /*height:fit-content;*/
 }
 
 .subscribe-box {
